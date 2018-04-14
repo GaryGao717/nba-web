@@ -4,7 +4,7 @@
 import React from 'react';
 import { ShotChart } from './ShotChart';
 import { CountSlider } from './CountSlider';
-import { Radio, Switch } from 'antd';
+import { Radio, Switch, Row, Col } from 'antd';
 import _ from 'lodash';
 
 const RadioGroup = Radio.Group;
@@ -43,15 +43,22 @@ export class DataViewContainer extends React.Component {
                     {this.state.chartType === 'hexbin' ?
                         <CountSlider onCountSliderChange={_.debounce(this.onCountSliderChange, 500)} /> : null }
                     <br/>
-                    <RadioGroup onChange={this.onChartTypeChange} value={this.state.chartType}>
-                        <Radio value="hexbin">hexbin</Radio>
-                        <Radio value="scatter">scatter</Radio>
-                    </RadioGroup>
-                    <Switch
-                        checkedChildren="On"
-                        unCheckedChildren="Off"
-                        onChange={this.onTooltipChange}
-                        defaultChecked />
+                    <Row className="chart-type-radio">
+                        <Col span={12} offset={0}>
+                            <RadioGroup onChange={this.onChartTypeChange} value={this.state.chartType}>
+                                <Radio value="hexbin">hexbin</Radio>
+                                <Radio value="scatter">scatter</Radio>
+                            </RadioGroup>
+                        </Col>
+                        <Col span={6}>
+                            Tooltip:{' '}
+                            <Switch
+                                checkedChildren="On"
+                                unCheckedChildren="Off"
+                                onChange={this.onTooltipChange}
+                                defaultChecked />
+                        </Col>
+                    </Row>
                 </div>
             </div>
         );

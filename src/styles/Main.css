@@ -1,4 +1,8 @@
 .main {
+    margin-top: 70px;
+}
+
+.player {
     margin: auto;
     display: flex;
     width: 750px;
