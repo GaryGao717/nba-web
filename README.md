@@ -139,7 +139,7 @@ my-app/
   src/
     App.css
     App.js
-    App.test.js
+    App.test.js````
     index.css
     index.js
     logo.svg
