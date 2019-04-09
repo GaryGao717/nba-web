@@ -1,10 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# Descriptions
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+-	Created a dashboard to visualize individual player’s shot data, including a shot chart and 4 line/bar charts
+-	Implemented linked highlighting among all charts using raised common React state among charts
+-	Created a field goal percentage filter to provide more detailed visualization areas with made shots
+-	Developed a match filter to more specifically visualize stats for home, away, won and lost matches
 
-## Table of Contents
+# Example
 
+<<<<<<< HEAD
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
@@ -2442,3 +2445,6 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+=======
+![](https://github.com/GaryRoach/nba-web/blob/master/src/assets/images/example.png)
+>>>>>>> 269f131ff2ef39d0fb40b8907b3f22c303f69e90

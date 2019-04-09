@@ -1,5 +1,5 @@
 .main {
-    margin-top: 70px;
+    margin: 20px 0px;
 }
 
 .player {
@@ -9,5 +9,5 @@
     border: 3px solid #ccc;
     box-shadow: 5px 10px 10px #888;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
